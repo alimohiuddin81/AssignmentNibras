@@ -1,0 +1,22 @@
+<!-- this component is to show users data  -->
+<div class="container">
+    <div class="row vertical-align">
+        
+    <div class="col-md-3" > <span class="textColor alignItems"><mat-icon>widgets</mat-icon>Users </span>
+    </div>
+</div>
+    <div class="row vertical-align">
+<div class="col-md-3" ><p class="textColor alignItems">Total user : {{totalCount}}</p></div>
+</div>
+    
+<div class="row vertical-align">
+  <div *ngFor="let user of users" class="col-md-4 img-container">
+    
+     <img style="width:90px;height:70px;" src={{user.url}}>
+    
+    <p>{{ user.name }}</p>
+    
+  </div>
+</div>
+</div>
+

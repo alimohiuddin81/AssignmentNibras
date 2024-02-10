@@ -1,0 +1,34 @@
+<!-- this component is to show top menus  -->
+<mat-toolbar color="primary">
+<div >
+    <span >
+        <a mat-button >  
+           <mat-icon>
+            <span class="material-symbols-outlined">
+                width_normal
+                </span>
+            </mat-icon> </a>
+    </span>
+    <span class="example-spacer"></span>
+    <button routerLink="" mat-button style="border:1px solid;color:white;"><p style="color:white;">sign in to create an account</p></button>
+
+    <span >
+        <a mat-button (click)="openFullscreen()" *ngIf="!isFullScreen"> 
+           <mat-icon>
+            open_in_full
+            </mat-icon> </a>
+    </span>
+
+    <span >
+        <a mat-button (click)="closeFullscreen()" *ngIf="isFullScreen"  > 
+           <mat-icon>
+                close_fullscreen
+            </mat-icon> </a>
+    </span>
+</div>
+    </mat-toolbar>
+
+    
+
+
+   

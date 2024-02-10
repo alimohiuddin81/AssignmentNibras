@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+$primarycolor:#47a1f6;
+$bgcolor:#f0f5fb;
+$txtColor:#668094;
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color :$bgcolor;}
+p{color: $primarycolor}
+span{
+    color: $primarycolor;
+}
+
+.textColor
+{
+    color:$txtColor;
+}
+
+.alignItems
+{
+    display:flex;
+}
+
+.fontBold
+{
+    font-weight: bold;
+}
+
+
+
+
