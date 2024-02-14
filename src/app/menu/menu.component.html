@@ -9,10 +9,12 @@
                 </span>
             </mat-icon> </a>
     </span>
-    <span class="example-spacer"></span>
-    <button routerLink="" mat-button style="border:1px solid;color:white;"><p style="color:white;">sign in to create an account</p></button>
 
     <span >
+
+        <button routerLink="" mat-raised-button color="primary">
+            <span style="border:1px solid;color: white;">Sign In to Create an Account</span>
+          </button>
         <a mat-button (click)="openFullscreen()" *ngIf="!isFullScreen"> 
            <mat-icon>
             open_in_full
