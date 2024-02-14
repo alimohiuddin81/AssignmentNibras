@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import {blogsDTO} from './blogs.model';
 
 @Injectable({
@@ -13,7 +13,9 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   getBlogs(): Observable<blogsDTO[]> {
-    return this.http.get<blogsDTO[]>(`${this.apiUrl}/posts`);
+    return this.http.get<blogsDTO[]>(`${this.apiUrl}/posts`).pipe (
+    map((blogsDTO:  blogsDTO[]) => blogsDTO.slice(0, 10))
+   );
   }
 
 }
