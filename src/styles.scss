@@ -4,6 +4,9 @@
 $primarycolor:#47a1f6;
 $bgcolor:#f0f5fb;
 $txtColor:#668094;
+$imageWidth: 150px;
+$imageHeight: 200px;
+$baseFontSize: 16px;
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color :$bgcolor;}
 p{color: $primarycolor}
 span{
@@ -27,8 +30,8 @@ span{
 
 .imageDimension
 {
-    width:150px;
-    height:200px;
+    width: calc($imageWidth / $baseFontSize) * 1rem;
+    height: calc($imageHeight / $baseFontSize) * 1rem;
 }
 
 

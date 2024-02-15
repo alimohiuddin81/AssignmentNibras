@@ -1,18 +1,18 @@
 .vertical-align {
-    display:flex;
-    align-items:center;
-    justify-content: flex-start; /* Align left */
-  }
-
-  .boxStyle
-{
-    border: 10px solid  #d3d3d3; 
-    margin:20px;
-    width:360px;
-    height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align left */
 }
 
-.boxContent
-{
-  padding-top:60px;
+.boxStyle {
+  border: 0.625rem solid #d3d3d3; 
+  margin: 1.25rem; 
+  width: 22.5rem;
+  height: 12.5rem; 
+
+  
+}
+
+.boxContent {
+  padding-top: 60px;
 }
